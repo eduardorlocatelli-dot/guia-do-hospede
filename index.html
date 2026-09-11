@@ -110,6 +110,49 @@ body{margin:0;background:#edf4f6;color:var(--ink);font-family:Arial,Helvetica,sa
 @media(max-width:850px){.sunrise-pontal{height:190px;margin-top:18px}}
 @media(max-width:520px){.sunrise-pontal{height:175px;border-radius:14px}.feature-main{padding:22px}}
 </style>
+
+<style>
+/* Correção final de visualização em celulares */
+html, body { max-width: 100%; overflow-x: hidden; }
+.page { width: 100%; max-width: 1180px; margin-left: auto; margin-right: auto; }
+.hero, .hero-photo, .hero-content { max-width: 100%; }
+.location { box-sizing: border-box; max-width: calc(100% - 36px); }
+.location b, .location small { overflow-wrap: anywhere; }
+
+@media (max-width: 850px) {
+  .hero-content { width: 100%; max-width: 100%; }
+  .location {
+    left: 18px !important;
+    right: 18px !important;
+    width: auto !important;
+    max-width: none !important;
+    padding: 14px 16px !important;
+  }
+  .location small {
+    display: block;
+    line-height: 1.35;
+    font-size: .9rem;
+  }
+  .section { width: 100%; }
+}
+
+@media (max-width: 520px) {
+  .hero-content {
+    padding: 44px 22px 125px !important;
+  }
+  .hero h1 {
+    font-size: 2.7rem !important;
+  }
+  .hero p {
+    max-width: 100% !important;
+  }
+  .location {
+    left: 14px !important;
+    right: 14px !important;
+    bottom: 14px !important;
+  }
+}
+</style>
 </head>
 <body>
 <div class="page">
